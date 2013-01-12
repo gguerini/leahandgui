@@ -25,6 +25,9 @@ class RsvpsController < ApplicationController
   # GET /rsvps/new.json
   def new
     @rsvp = Rsvp.new
+    @rsvp.presence_wedding = true
+    @rsvp.presence_party = true
+    @rsvp.quantity = 1
 
     respond_to do |format|
       format.html # new.html.erb
