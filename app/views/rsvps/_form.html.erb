@@ -1,76 +1,71 @@
-<%= form_for(@rsvp, :id => "search_form") do |f| %>
-  <% if @rsvp.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@rsvp.errors.count, "error") %> prohibited this rsvp from being saved:</h2>
+<div id="rsvp-area">
+  <%= form_for(@rsvp, :validate => true, :remote => true, :html => {:'data-type' => 'json', :'data-update-target' => "rsvp-area", }) do |f| %>
+    <% if @rsvp.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@rsvp.errors.count, "error") %> prohibited this rsvp from being saved:</h2>
 
-      <ul>
-      <% @rsvp.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
+        <ul>
+        <% @rsvp.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.label :name %><br />
+      <%= f.text_field :name %>
+    </div>
+    <div class="field">
+      <%= f.label :email %><br />
+      <%= f.text_field :email, :validate => { :uniqueness => false } %>
+      <p id="status-message" ></p>
+    </div>
+    <div class="field">
+      Will you come to the Wedding?<br />
+      <%= f.radio_button :presence_wedding, true %> Yes, I've been waiting for 5 years! <br>
+      <%= f.radio_button :presence_wedding, false %> No, I waited too long. 
+    </div>
+    <div class="field">
+      Will you also come to the party on Saturday night?<br />
+      <%= f.radio_button :presence_party, true %> Yes, I AM the party.  <br>
+      <%= f.radio_button :presence_party, false %> No, I'm lame.  
+    </div>
+    <div class="field">
+      <%= f.label :quantity, "How many people will come?" %><br />
+      <%= f.number_field :quantity %>
+    </div>
+    <div class="actions">
+      <%= f.submit "Send RSVP", :disable_with => 'Saving .....' %>
     </div>
   <% end %>
+</div>
 
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
-    <p id="status-message" ></p>
-  </div>
-  <div class="field">
-    Will you come to the Wedding?<br />
-    <%= f.radio_button :presence_wedding, true %> Absolutely!<br>
-    <%= f.radio_button :presence_wedding, false %> I won't be able to go unfortunately. :(
-  </div>
-  <div class="field">
-    Will you also come to the party on Saturday night?<br />
-    <%= f.radio_button :presence_party, true %> Oh yeah! I'm actually only coming because of the party.<br>
-    <%= f.radio_button :presence_party, false %> No. I'm so boring that I will stay at my hotel room watching cable TV.
-  </div>
-  <div class="field">
-    <%= f.label :quantity, "How many people will come?" %><br />
-    <%= f.number_field :quantity %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+<script type="text/javascript">
 
-<style type="text/css">
-      div#email-container > h1 {
-        margin-bottom: 30px;
-      }
-      
-      input#rsvp_email.verimail-success {
-        background: transparent url('/assets/success.png') no-repeat center right;
-      }
-      input#rsvp_email.verimail-error {
-        background: transparent url('/assets/error.png') no-repeat center right;
-      }
-      input#rsvp_email.verimail-pending {
-        background: transparent url('/assets/pending.gif') no-repeat center right;
-      }
+  $(document).ready(function(){
 
-      p#status-message span.success {
-        color: green;
-      }
-      p#status-message span.error {
-        color: red;
-      }
-      p#status-message span.correction {
-        font-weight: bold;
-      }
-    </style>
+    $('form[data-update-target]')
+      .live('ajax:success', function(data, status, xhr) {
+        var target = $(this).data('update-target');
+        var response = "<h1>Thank you " + status.name + ", we will be waiting for you!";
+        $('#' + target).html(response);
+      })
+      .live('ajax:error', function(xhr, status, error) {
+        var errors = $.parseJSON(status.responseText);
+        if (errors.email != undefined && errors.email == "has already been taken") {
+          var target = $(this).data('update-target');
+          var response = "<h1>You already RSVP. If you would like to update your status, please contact Leah or Guillermo.";
+          $('#' + target).html(response);
+        }
+    });
 
-<script>
-      $(document).ready(function(){
-        $("input#rsvp_email").verimail({
-          denyTempEmailDomains: true,
-          messageElement: "p#status-message",
-          language: 'ptbr'
-        });
-      });
-    </script>
+    $("input#rsvp_email").verimail({
+      denyTempEmailDomains: true,
+      messageElement: "p#status-message",
+      language: 'ptbr'
+    });
+
+  });
+
+</script>

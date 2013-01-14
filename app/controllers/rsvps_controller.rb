@@ -1,6 +1,5 @@
 class RsvpsController < ApplicationController
-  # GET /rsvps
-  # GET /rsvps.json
+
   def index
     @rsvps = Rsvp.all
 
@@ -10,8 +9,6 @@ class RsvpsController < ApplicationController
     end
   end
 
-  # GET /rsvps/1
-  # GET /rsvps/1.json
   def show
     @rsvp = Rsvp.find(params[:id])
 
@@ -21,8 +18,6 @@ class RsvpsController < ApplicationController
     end
   end
 
-  # GET /rsvps/new
-  # GET /rsvps/new.json
   def new
     @rsvp = Rsvp.new
     @rsvp.presence_wedding = true
@@ -35,15 +30,13 @@ class RsvpsController < ApplicationController
     end
   end
 
-  # GET /rsvps/1/edit
   def edit
     @rsvp = Rsvp.find(params[:id])
   end
 
-  # POST /rsvps
-  # POST /rsvps.json
   def create
     @rsvp = Rsvp.new(params[:rsvp])
+    @name = params[:rsvp][:name]
 
     respond_to do |format|
       if @rsvp.save
@@ -56,8 +49,6 @@ class RsvpsController < ApplicationController
     end
   end
 
-  # PUT /rsvps/1
-  # PUT /rsvps/1.json
   def update
     @rsvp = Rsvp.find(params[:id])
 
@@ -72,8 +63,6 @@ class RsvpsController < ApplicationController
     end
   end
 
-  # DELETE /rsvps/1
-  # DELETE /rsvps/1.json
   def destroy
     @rsvp = Rsvp.find(params[:id])
     @rsvp.destroy

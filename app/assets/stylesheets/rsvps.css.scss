@@ -1,3 +1,23 @@
-// Place all the styles related to the Rsvps controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+div#email-container > h1 {
+  margin-bottom: 30px;
+}
+
+input#rsvp_email.verimail-success {
+  background: transparent url('/assets/success.png') no-repeat center right;
+}
+input#rsvp_email.verimail-error {
+  background: transparent url('/assets/error.png') no-repeat center right;
+}
+input#rsvp_email.verimail-pending {
+  background: transparent url('/assets/pending.gif') no-repeat center right;
+}
+
+p#status-message span.success {
+  color: green;
+}
+p#status-message span.error {
+  color: red;
+}
+p#status-message span.correction {
+  font-weight: bold;
+}
