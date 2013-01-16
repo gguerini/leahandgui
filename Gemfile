@@ -4,7 +4,7 @@ gem 'rails', '3.2.11'
 gem 'html5shiv-rails'
 gem 'client_side_validations'
 
-group :development, :teste do
+group :development, :test do
   gem 'sqlite3'
 end
 
