@@ -60,10 +60,6 @@ p { margin: 5px 0; }
    margin:auto;
 }
 
-.arrow_off {
-   padding-top:5px;
-}
-
 .clear {
    clear:both;
 }
@@ -82,6 +78,7 @@ p { margin: 5px 0; }
 }
 
 #home_title {
+  padding: 50px 0;
    margin: auto;
    text-align: center;
    /*background-color: #66CCFF;*/
@@ -93,6 +90,7 @@ p { margin: 5px 0; }
    height: auto;
    margin: auto;
    color: #fff;
+   padding: 0 0 30px 0;
 }
 
 #home_date span {
@@ -114,6 +112,7 @@ p { margin: 5px 0; }
    margin:0 auto;
    width: 950px;
    text-align: center;
+   padding-bottom: 40px;
 }
 
 #homenav ul {
@@ -155,19 +154,20 @@ p { margin: 5px 0; }
 
 .arrow_container {
    width:auto;
+   text-align: center;
    height:36px;
    /*background:#66FF00;*/
+   /*opacity:0.4;*/
 }
 
 .arrow {
-   width:56px;
-   height:36px;
-   margin:auto;
-   opacity:0.4;
-   display: block;
-   /*background-color:#00CC66;*/
+   padding: 0 10px;
+   opacity: 0.4;
 }
 
+.arrow_off {
+   padding-top:5px;
+}
 
 #couple {
    width:960px;
@@ -196,12 +196,6 @@ ul.photo-gallery li {
    list-style-type: none;
    text-align: center;
 }
-
-/*ul.registry {
-   background-color: yellow;
-   width: 600px;
-   height: 300px;
-}*/
 
 ul.registry li {
    float: left;
@@ -300,7 +294,6 @@ ul.photo-gallery p {
    /*background:#66CCFF;*/
 }
 
-
 .space_whattodo {
    width:21px;
    height:330px;
@@ -358,39 +351,17 @@ ul.photo-gallery p {
    /*background:#CCFF00;*/
 }
 
-.space0 {
-   width:960px;
-   height:25px;
-   /*background:#00CC99;*/
-}
-
-.space1 {
-   width:960px;
-   height:50px;
-   /*background:#00CC99;*/
-}
-
-.space2 {
-   width:960px;
-   height:75px;
-   /*background:#00CC99;*/
-}
-
 .title {
    /*width:312px;*/
    margin:auto;
    text-align: center;
+   padding: 40px 0 25px 0;
 }
 
 .content {
    width:960px;
    height:440px;
-   /*background:#CC0000;*/
-}
-
-.content2 {
-   width:960px;
-   height:420px;
+   min-height: 440px;
    /*background:#CC0000;*/
 }
 
@@ -444,9 +415,9 @@ ul.photo-gallery p {
    color: white;
    width:450px;
    height:150px;
-   /*background-color:#00FF66;*/
    float:left;
    text-align: left;
+   /*background-color:#00FF66;*/
 }
 
 #footer .details {
