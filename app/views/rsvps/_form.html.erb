@@ -13,29 +13,29 @@
     <% end %>
 
     <div class="field">
-      <%= f.label :name %><br />
+      <p><%= f.label :name, :class => "label_question" %></p>
       <%= f.text_field :name %>
     </div>
     <div class="field">
-      <%= f.label :email %><br />
+      <p><%= f.label :email, :class => "label_question" %></p>
       <%= f.text_field :email, :validate => { :uniqueness => false } %>
       <p id="status-message" ></p>
     </div>
     <div class="field">
-      Will you come to the Wedding?<br />
+      <p><%= f.label "Will you come to the Wedding?", :class => "label_question" %></p>
       <%= f.radio_button :presence_wedding, true %> Yes, I've been waiting for 5 years! <br>
       <%= f.radio_button :presence_wedding, false %> No, I waited too long. 
     </div>
     <div class="field">
-      Will you also come to the party on Saturday night?<br />
+      <p><%= f.label "Will you also come to the party on Saturday night?", :class => "label_question" %></p>
       <%= f.radio_button :presence_party, true %> Yes, I AM the party.  <br>
       <%= f.radio_button :presence_party, false %> No, I'm lame.  
     </div>
     <div class="field">
-      <%= f.label :quantity, "How many people will come?" %><br />
+      <p><%= f.label :quantity, "How many people will come?", :class => "label_question" %></p>
       <%= f.number_field :quantity %>
     </div>
-    <div class="actions">
+    <div class="field">
       <%= f.submit "Send RSVP", :disable_with => 'Saving .....' %>
     </div>
   <% end %>
@@ -45,10 +45,19 @@
 
   $(document).ready(function(){
 
+    var presence_msg = ""
+
     $('form[data-update-target]')
       .live('ajax:success', function(data, status, xhr) {
         var target = $(this).data('update-target');
-        var response = "<p>Thank you " + status.name + ", we will be waiting for you!</p>";
+        var response = "";
+
+        if (status.presence_wedding) {
+          response = "<h3>Thanks " + status.name + "!<br>We can't wait to party with you! :)</h3>";
+        }
+        else {
+          response = "<h3>Bummer! Are you really sure you don't want to come? You will be missed. :(</h3>";
+        }
         $('#' + target).html(response);
       })
       .live('ajax:error', function(xhr, status, error) {

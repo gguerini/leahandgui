@@ -30,6 +30,12 @@ h2 {
    color: #01103e;
 }
 
+h3 {
+   font-size: 20px;
+   font-weight: bold;
+   color: #01103e;
+}
+
 .spacing_top {
    padding-top: 30px;
 }
@@ -330,17 +336,25 @@ ul.photo-gallery p {
 }
 
 #rsvpform {
-   width:446px;
+   width:550px;
    height:380px;
-   /*background:#3399FF;
-   */float:left;
+   float:left;
+   /*background:#3399FF;*/
+}
+
+.label_question {
+  font-size: 16px;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  /*background-color: yellow;*/
 }
 
 #contact {
-   width:280px;
+   width:270px;
    height:380px;
    float:left;
-   margin-left:120px;
+   margin-left:100px;
    /*background:#CCFF00;*/
 }
 
@@ -452,13 +466,17 @@ ul.photo-gallery p {
   display: table;
 }
 
+.field { 
+padding: 15px 0 0 0;
+}
+
 #error_explanation {
   width: 450px;
   border: 2px solid red;
   padding: 7px;
   padding-bottom: 0;
   margin-bottom: 20px;
-  background-color: #f0f0f0;
+  /*background-color: #f0f0f0;*/
   h2 {
     text-align: left;
     font-weight: bold;
@@ -466,7 +484,7 @@ ul.photo-gallery p {
     font-size: 12px;
     margin: -7px;
     margin-bottom: 0px;
-    background-color: #c00;
+    /*background-color: #c00;*/
     color: #fff;
   }
   ul li {

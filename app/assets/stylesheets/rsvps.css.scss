@@ -3,13 +3,13 @@ div#email-container > h1 {
 }
 
 input#rsvp_email.verimail-success {
-  background: transparent url('/assets/success.png') no-repeat center right;
+  background: white url('/assets/success.png') no-repeat center right;
 }
 input#rsvp_email.verimail-error {
-  background: transparent url('/assets/error.png') no-repeat center right;
+  background: white url('/assets/error.png') no-repeat center right;
 }
 input#rsvp_email.verimail-pending {
-  background: transparent url('/assets/pending.gif') no-repeat center right;
+  background: white url('/assets/pending.gif') no-repeat center right;
 }
 
 p#status-message span.success {
