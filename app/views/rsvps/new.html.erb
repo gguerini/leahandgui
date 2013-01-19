@@ -14,22 +14,22 @@
         </div>
 
         <div id="home_date" >
-            <span>February 24th, 2013</span>
-            <span class="smaller">Phoenix, AZ, USA</span>
+            <span><%= t("date") %></span>
+            <span class="smaller"><%= t("location") %></span>
         </div>
 
         <p>"Love does not boast. Love does not boast. Love does not boast. Love does not boast. Love does not boast. Love does not boast. Love does not boast. Love does not boast. Love does not boast." Cor. 12:34</p>
 
         <div id="homenav">
             <ul class="navigation">
-                <li><a class="hastip couple" title="About Us" href="#area_couple">About Us</a></li>
-                <li><a class="hastip wedding" title="The Wedding" href="#area_wedding">The Wedding</a></li>
-                <li><a class="hastip preparty" title="Warm Up Party" href="#area_preparty">Pre Party</a></li>
-                <li><a class="hastip photos" title="Photos" href="#area_photos">Photos</a></li>
-                <li><a class="hastip hotels" title="Where to stay?" href="#area_hotels">Where to stay?</a></li>
-                <li><a class="hastip whattodo" title="What to do?" href="#area_whattodo">What to do?</a></li>
-                <li><a class="hastip registry" title="Registry" href="#area_registry">Registry</a></li>
-                <li><a class="hastip rsvp" title="RSVP" href="#area_rsvp">RSVP</a></li>
+                <li><a class="hastip couple" title="<%= t("areas.about-us") %>" href="#area_couple"><%= t("areas.about-us") %></a></li>
+                <li><a class="hastip wedding" title="<%= t("areas.wedding") %>" href="#area_wedding"><%= t("areas.wedding") %></a></li>
+                <li><a class="hastip preparty" title="<%= t("areas.warm-up") %> " href="#area_preparty"><%= t("areas.warm-up") %> </a></li>
+                <li><a class="hastip photos" title="<%= t("areas.photos") %>" href="#area_photos"><%= t("areas.photos") %></a></li>
+                <li><a class="hastip hotels" title="<%= t("areas.hotels") %>" href="#area_hotels"><%= t("areas.hotels") %></a></li>
+                <li><a class="hastip whattodo" title="<%= t("areas.what-to-do") %>" href="#area_whattodo"><%= t("areas.what-to-do") %></a></li>
+                <li><a class="hastip registry" title="<%= t("areas.registry") %>" href="#area_registry"><%= t("areas.registry") %></a></li>
+                <li><a class="hastip rsvp" title="<%= t("areas.rsvp") %>" href="#area_rsvp"><%= t("areas.rsvp") %></a></li>
             </ul>            
         </div>
 
@@ -46,7 +46,7 @@
         <a name="area_couple" id="area_couple"></a>
 
         <div class="title">
-            <h2>About Us</h2>
+            <h2><%= t("areas.about-us") %></h2>
         </div>
 
         <div class="content">
@@ -73,7 +73,7 @@
         <a name="area_wedding" id="area_wedding"></a>
 
         <div class="title">
-          <h2>The Wedding</h2>
+          <h2><%= t("areas.wedding") %></h2>
         </div>
 
         <div class="content">
@@ -119,7 +119,7 @@
         <a name="area_preparty" id="area_preparty"></a>
 
         <div class="title">
-            <h2>Warm Up Party</h2>
+            <h2><%= t("areas.warm-up") %> </h2>
         </div>
 
         <div class="content">
@@ -138,7 +138,7 @@
                     Please come at 5:00<br>
                 </p>
 
-                <p>Same address of the wedding:</p>
+                <p>Same address of <%= t("areas.wedding") %>:</p>
                 <p class="real_info">
                     4203 E. Hazelwood St.,<br>
                     Phoeniz, AZ, 85018
@@ -162,7 +162,7 @@
         <a name="area_photos" id="area_photos"></a>
 
         <div class="title">
-            <h2>Photos</h2>
+            <h2><%= t("areas.photos") %></h2>
         </div>
 
         <div class="content">
@@ -188,7 +188,7 @@
         <a name="area_hotels" id="area_hotels"></a>
         
         <div class="title">
-          <h2>Where to stay</h2>
+          <h2><%= t("areas.hotels") %></h2>
         </div>
         
         <div class="content">
@@ -252,7 +252,7 @@
         <a name="area_whattodo" id="area_whattodo"></a>
 
         <div class="title">
-            <h2>What to do?</h2>
+            <h2><%= t("areas.what-to-do") %></h2>
         </div>
 
         <div id="content">
@@ -275,7 +275,7 @@
         <a name="area_registry" id="area_registry"></a>
 
         <div class="title">
-            <h2>Registry</h2>
+            <h2><%= t("areas.registry") %></h2>
         </div>
 
         <div class="content">
@@ -321,7 +321,7 @@
         <a name="area_rsvp" id="area_rsvp"></a>
         
         <div class="title">
-            <h2>RSVP</h2>
+            <h2><%= t("areas.rsvp") %></h2>
         </div>
 
         <div class="content">
@@ -357,14 +357,14 @@
             <div class="footer_block links">
                 <ul>
                     <li><a href="#header">Home</a></li>
-                    <li><a href="#area_couple">About Us</a></li>
-                    <li><a href="#area_wedding">Wedding</a></li>
-                    <li><a href="#area_preparty">Warm Up Party</a></li>
-                    <li><a href="#area_photos">Photos</a></li>
-                    <li><a href="#area_hotels">Where to stay?</a></li>
-                    <li><a href="#area_whattodo">What to do?</a></li>
-                    <li><a href="#area_registry">Registry</a></li>
-                    <li><a href="#area_rsvp">RSVP</a></li>
+                    <li><a href="#area_couple"><%= t("areas.about-us") %></a></li>
+                    <li><a href="#area_wedding"><%= t("areas.wedding") %></a></li>
+                    <li><a href="#area_preparty"><%= t("areas.warm-up") %> </a></li>
+                    <li><a href="#area_photos"><%= t("areas.photos") %></a></li>
+                    <li><a href="#area_hotels"><%= t("areas.hotels") %></a></li>
+                    <li><a href="#area_whattodo"><%= t("areas.what-to-do") %></a></li>
+                    <li><a href="#area_registry"><%= t("areas.registry") %></a></li>
+                    <li><a href="#area_rsvp"><%= t("areas.rsvp") %></a></li>
                 </ul>
             </div>
         </div>

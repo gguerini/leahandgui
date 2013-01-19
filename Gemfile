@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.11'
 gem 'html5shiv-rails'
 gem 'client_side_validations'
+gem 'awesome_print'
+gem 'rails-translate-routes'
 
 group :development, :test do
   gem 'sqlite3'

@@ -1,5 +1,12 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
-
 en:
-  hello: "Hello world"
+  date: "February 24th, 2013"
+  location: "Phoenix, AZ, USA"
+  areas:
+    about-us: "About Us"
+    wedding: "The Wedding"
+    warm-up: "Warm Up Party"
+    photos: "Photos"
+    hotels: "Where to stay?"
+    what-to-do: "What to do?"
+    registry: "Registry"
+    rsvp: "RSVP"
