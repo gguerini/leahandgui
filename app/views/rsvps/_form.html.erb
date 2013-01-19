@@ -64,7 +64,7 @@
         var errors = $.parseJSON(status.responseText);
         if (errors.email != undefined && errors.email == "has already been taken") {
           var target = $(this).data('update-target');
-          var response = "<p>You already RSVP. If you would like to update your status, please contact Leah or Guillermo.</p>";
+          var response = "<h3>You already RSVP. If you would like to update your status, please contact Leah or Guillermo.</h3>";
           $('#' + target).html(response);
         }
     });
