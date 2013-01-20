@@ -6,6 +6,7 @@
    padding: 0;  
    font-family: 'Cutive Mono', serif, Times;
    font-size: 15px;
+   border: 0;
 }
 
 body {
@@ -19,9 +20,10 @@ h1 {
 }
 
 h1 span {
-   font-size: 85px;
+   font-size: 75px;
    color: #fff;
    display: block;
+   /*background-color: green;*/
 }
 
 h2 {
@@ -84,10 +86,10 @@ p { margin: 5px 0; }
 }
 
 #home_title {
-  padding: 50px 0;
-   margin: auto;
-   text-align: center;
-   /*background-color: #66CCFF;*/
+  padding: 25px 0 0 0;
+  margin: auto;
+  text-align: center;
+  /*background-color: #66CCFF;*/
 }
 
 #home_date {
@@ -96,7 +98,7 @@ p { margin: 5px 0; }
    height: auto;
    margin: auto;
    color: #fff;
-   padding: 0 0 30px 0;
+   padding: 10px 0;
 }
 
 #home_date span {
@@ -107,6 +109,12 @@ p { margin: 5px 0; }
    font-size: 25px;
 }
 
+#home p { 
+  padding: 25px 0;
+  font-style: italic;
+  display: block;
+}
+
 .tooltipsy {
     padding: 10px;
     max-width: 200px;
@@ -115,10 +123,10 @@ p { margin: 5px 0; }
 }
 
 #homenav {
-   margin:0 auto;
-   width: 950px;
-   text-align: center;
-   padding-bottom: 40px;
+  margin: 0 auto;
+  width: 950px;
+  text-align: center;
+  padding-bottom: 45px;
 }
 
 #homenav ul {
@@ -128,7 +136,7 @@ p { margin: 5px 0; }
 
 #homenav ul.navigation li {
    float: left;
-   margin: 0 15px;
+   margin: 0 19px;
 }
 
 #homenav a {
