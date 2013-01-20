@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Leah & Gui - <%= t("date") %> - <%= t("location") %></title>
+  <title><%= t("title") %> - <%= t("wedding.date") %> - <%= t("location") %></title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <link href='http://fonts.googleapis.com/css?family=Cutive+Mono&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -14,7 +14,7 @@
 
   <%= yield %>
 
-<%= render 'analytics' %>
+<%= render 'analytics' unless Rails.env.development? %>
 
 </body>
 </html>

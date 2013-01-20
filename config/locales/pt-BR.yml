@@ -1,6 +1,9 @@
 pt-BR:
-  date: "24 de Fevereiro, 2013"
   location: "Phoenix, Arizona, EUA"
+  sunday: "Domingo"
+  saturday: "Sábado"
+  title: "Casamento da Leah e do Gui"
+  verse: '"O amor não.. O amor não.. O amor não.. O amor não.. O amor não.. O amor não.. O amor não.. O amor não.. O amor não.. O amor não.. O amor não.. O amor não.. O amor não.. O amor não.. O amor não.. " Cor. 12:34'
   areas:
     about-us: "Sobre nós"
     wedding: "O Casamento"
@@ -10,3 +13,28 @@ pt-BR:
     what-to-do: "O que fazer?"
     registry: "Lista de Presentes"
     rsvp: "Confirmação de Presença"
+  wedding:
+    description: "Isso é o que todos vocês estavam esparando! Então não se atrase para celebrar o resto das nossas vidas juntos com todos vocês que amamos muito!"
+    ceremony: "Cerimônia às 16:30"
+    address: "Endereço:"
+    date: "24 de Fevereiro, 2013"
+    time: "às 16:30"
+    rsvp_phrase: "Por favor não se esqueça de"
+    rsvp_message: "confirmar a sua presença"
+  warm-up:
+    description: "Nós não queremos ver você apenas no dia do casamento! Então venham na nossa casa para curtir o que fazemos de melhor: comer e beber!"
+    time: "Chegue às 17:00"
+    address: "O mesmo endereço do casamento:"
+    date: "23 de Fevereiro, 2013"
+  hotels:
+    other-options: "Outras opções podem ser encontradas em:"
+  registry:
+    description: "A sua presença é o suficiente. Mas caso deseje comprar um garfo ou uma faca, a nossa lista de presentes esta disponível nos seguintes lugares:"
+    address: "Por favor, envie os presentes para:"
+    registry-site: "Lista de Presentes na"
+    special-message-portuguese: "MENSAGEM SOBRE CARTÃO DE CREDITO"
+    go-to-amazon: "Ir para o site da Amazon"
+    go-to-crateandbarrel: "Ir para o site da Crate and Barrel"
+    go-to-surlatable: "Ir para o site da Sur La Table"
+  rsvp:
+    contact-info: "Entre em contato com o casal:"

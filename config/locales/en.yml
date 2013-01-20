@@ -1,6 +1,9 @@
 en:
-  date: "February 24th, 2013"
   location: "Phoenix, AZ, USA"
+  sunday: "Sunday"
+  saturday: "Saturday"
+  title: "Leah and Gui's Wedding"
+  verse: '"Love does not boast. Love does not boast. Love does not boast. Love does not boast. Love does not boast. Love does not boast. Love does not boast. Love does not boast. Love does not boast." Cor. 12:34'
   areas:
     about-us: "About Us"
     wedding: "The Wedding"
@@ -10,3 +13,27 @@ en:
     what-to-do: "What to do?"
     registry: "Registry"
     rsvp: "RSVP"
+  wedding:
+    description: "This is what you've all been waiting for! So don't be late as we celebrate the rest of our lives with those of you who we love so much!"
+    ceremony: "Ceremony at 4:30"
+    address: "Address:"
+    date: "February 24th, 2013"
+    time: "at 4:30"
+    rsvp_phrase: "Please don't forget to"
+    rsvp_message: "RSVP"
+  warm-up:
+    description: "We don't just want to see you for 6 hours! That's why you came all this way, right? So come over to our house and do what we do best, eat and drink!"
+    time: "Please come at 5:00"
+    address: "Same address of the wedding:"
+    date: "February 23rd, 2013"
+  hotels:
+    other-options: "If you prefer a fancier or cheaper place take a look at:"
+  registry:
+    description: "We are just happy you are here. Really. But, if you wish to buy us a fork or two, we are registered at:"
+    address: "Please, send the gifts to:"
+    registry-site: "Wedding Registry at"
+    go-to-amazon: "Go to Amazon's website"
+    go-to-crateandbarrel: "Go to Crate and Barrel's website"
+    go-to-surlatable: "Go to Sur La Table's website"
+  rsvp:
+    contact-info: "Contact the couple:"

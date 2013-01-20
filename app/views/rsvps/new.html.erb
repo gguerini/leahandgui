@@ -14,11 +14,11 @@
         </div>
 
         <div id="home_date" >
-            <span><%= t("date") %></span>
+            <span><%= t("wedding.date") %></span>
             <span class="smaller"><%= t("location") %></span>
         </div>
 
-        <p>"Love does not boast. Love does not boast. Love does not boast. Love does not boast. Love does not boast. Love does not boast. Love does not boast. Love does not boast. Love does not boast." Cor. 12:34</p>
+        <p><%= t("verse") %></p>
 
         <div id="homenav">
             <ul class="navigation">
@@ -85,20 +85,21 @@
             </div>
 
             <div class="wedding_block wedding_details">
-                <p class="">This is what you've all been waiting for! So don't be late as we celebrate the rest of our lives with those of you who we love so much!</p>
+                <p><%= t("wedding.description") %></p>
 
                 <p class="real_info">
-                    Sunday, February 24th, 2013<br>
-                    Ceremony at 4:30<br>
+                    <%= t("sunday") %>, <%= t("wedding.date") %><br>
+                    <%= t("wedding.ceremony") %><br>
                 </p>
 
+                <p><%= t("wedding.address") %></p>
                 <p class="real_info">
                     4203 E. Hazelwood St.,<br>
                     Phoeniz, AZ, 85018
                 </p>
 
                 <p>
-                    <span style="background-color: yellow;">Please don't forget to <a href="#area_rsvp" title="RSVP">RSVP</a>.</span>
+                    <span style="background-color: yellow;"><%= t("wedding.rsvp_phrase") %> <a href="#area_rsvp" title="RSVP"><%= t("wedding.rsvp_message") %></a>.</span>
                 </p>
             </div>
 
@@ -131,14 +132,14 @@
             </div>
 
             <div class="wedding_block wedding_details">
-                <p>We don't just want to see you for 6 hours! That's why you came all this way, right? So come over to our house and do what we do best, eat and drink! </p>
+                <p><%= t("warm-up.description") %></p>
 
                 <p class="real_info">
-                    Saturday, February 23th, 2013<br>
-                    Please come at 5:00<br>
+                    <%= t("saturday") %>, <%= t("warm-up.date") %><br>
+                    <%= t("warm-up.time") %><br>
                 </p>
 
-                <p>Same address of <%= t("areas.wedding") %>:</p>
+                <p><%= t("warm-up.address") %></p>
                 <p class="real_info">
                     4203 E. Hazelwood St.,<br>
                     Phoeniz, AZ, 85018
@@ -231,7 +232,7 @@
             </div>
 
             <div class="clear spacing_top">
-                <p>If you prefer a fancier or cheaper place take a look at: </p>
+                <p><%= t("hotels.other-options") %></p>
                 <a href="http://www.kayak.com/" target="blank">Kayak</a> <br>
                 <a href="http://www.hotwire.com/" target="blank">Hotwire</a>
             </div>
@@ -280,24 +281,28 @@
 
         <div class="content">
 
-            <p>We are just happy you are here. Really.  But, if you wish to buy us a fork or two, we are registered at:</p>
+            <p><%= t("registry.description") %></p>
             
             <ul class="registry">
                 <li>
                     <a href="http://goo.gl/SydKr" target="_blank">
-                        <img title="Wedding Registry at Amazon.com" src="/assets/icons/amazon.png" />
-                        <p>Go to Amazon's website</p>
+                        <img title="<%= t("registry.registry-site") %> Amazon" src="/assets/icons/amazon.png" />
+                        <p><%= t("registry.go-to-amazon") %></p>
                     </a>
                 </li>
                 <li>
                     <a href="http://goo.gl/RcUaD" target="_blank">
-                        <img title="Wedding Registry at Crate and Barrel" border="0" src="/assets/icons/crateandbarrel.png" />
-                        <p>Go to Crate and Barrel's website</p>
+                        <img title="<%= t("registry.registry-site") %> Crate and Barrel" border="0" src="/assets/icons/crateandbarrel.png" />
+                        <p><%= t("registry.go-to-crateandbarrel") %></p>
                     </a>
                 </li>
             </ul>
 
-            <p class="clear spacing_top">Please, send the gifts to:</p>
+            <% if portuguese? %>
+                <p class="clear spacing_top"><%= t("registry.special-message-portuguese") %></p>
+            <% end %>
+
+            <p class="clear spacing_top"><%= t("registry.address") %></p>
             <p class="real_info">
             Leah Gregory<br>
             11983 North 136th Way<br>
@@ -333,9 +338,9 @@
             </div>
             
             <div id="contact">
-              <p>Contact the couple:</p>
-                <a href="mailto:email@address.com">Guillermo</a><br>
-                <a href="mailto:email@address.com">Leah</a>
+              <p><%= t("rsvp.contact-info") %></p>
+                <a href="mailto:email@address.com">Guillermo</a> CREATE EMAIL ADDRESS<br>
+                <a href="mailto:email@address.com">Leah</a> CREATE EMAIL ADDRESS
             </div>
         
         </div>
@@ -349,8 +354,8 @@
     <div id="footer" style="display: block">
         <div class="footer_wrapper">
             <div class="footer_block">
-                <p class="details">Leah and Gui's Wedding</p>
-                Sunday, February 24th, 2013 at 4:30<br>
+                <p class="details"><%= t("title") %></p>
+                <%= t("sunday") %>, <%= t("wedding.date") %> <%= t("wedding.time") %><br>
                 4203 E. Hazelwood St.<br>
                 Phoeniz, AZ, 85018
             </div>
