@@ -3,7 +3,7 @@ en:
   sunday: "Sunday"
   saturday: "Saturday"
   title: "Leah and Gui's Wedding"
-  verse: '"Love does not boast. Love does not boast. Love does not boast. Love does not boast. Love does not boast. Love does not boast. Love does not boast. Love does not boast. Love does not boast." Cor. 12:34'
+  verse: '"Love is patient, love is kind. It does not envy, it does not boast, it is not proud. It is not rude, it is not self-seeking, it is not easily angered, it keeps no record of wrongs. Love does not delight in evil but rejoices with the truth. It always protects, always trusts, always hopes, always perseveres." Cor. 13:4-6'
   areas:
     about-us: "About Us"
     wedding: "The Wedding"
@@ -13,6 +13,8 @@ en:
     what-to-do: "What to do?"
     registry: "Registry"
     rsvp: "RSVP"
+  about-us:
+    text: "<p>Once upon a time lived a girl desperate to travel. She went on a backpacking trip with her brother 5 years ago where she met him and 3 of his friends at a hostel in the middle of one of the most beautiful cities in the world, Buenos Aires. It was only a few days that  she and he hung out, but they were a few important days that changed the rest of their lives. You see, she went home and he went home and she and he spoke for endless hours in broken English and miscommunications.</p><p>She decided to move her plans from going to Rome to going back to Buenos Aires. He decided to quit his job and move to Buenos Aires. They went on having conversations with less and less broken English and miscommunications and fell in love not only with the city, but with each other. But that wasn't enough, you see, the world is a big place with many things to discover.</p><p>He and She eventually moved to here and there. Milan was short and sweet as their fill of focaccia and gelato was met. Next they went on to discover their most impactful trip. Through the Middle East they went as each wonder and person they met were as charming and kind as the next. Through Turkey, Syria, Israel, Palestine, Jordan and Egypt... on to to Spain they turned to see if would be a home. He and She fell in love again. Sevilla, is the city they will always be in love with. Sevilla stole their hearts!</p><p>But alas, they returned to the continent they started in, Brazil is where they would call home for almost two years as they traveled around. He and She then moved on to the US and traveled among 20 of the great states! Where they got engaged one sunny fall day in Her favorite city, Boston. The future is unclear, but now He and She will always have each other.</p>"
   wedding:
     description: "This is what you've all been waiting for! So don't be late as we celebrate the rest of our lives with those of you who we love so much!"
     ceremony: "Ceremony at 4:30"
