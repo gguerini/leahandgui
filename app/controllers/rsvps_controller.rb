@@ -1,5 +1,7 @@
 class RsvpsController < ApplicationController
 
+  before_filter :logged_in, :except => [:new, :create]
+
   def index
     @rsvps = Rsvp.all
 
@@ -72,4 +74,10 @@ class RsvpsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  private
+
+    def logged_in
+      redirect_to new_session_path unless signed_in?
+    end
 end
