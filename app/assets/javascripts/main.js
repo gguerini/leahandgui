@@ -28,14 +28,23 @@ $(document).ready(function() {
   
   $(window).scroll(function() {
     var scroller = $(window).scrollTop();
-    var offSetScroll = 550;
-    var offSetScrollBottom = 7320;    
+    var offSetScroll = 580;
+    var offSetScrollBottom = 7320;
+
+    if (scroller >= 450) {
+      $("#flag").fadeOut(250);
+    }
+    else {
+     $("#flag").fadeIn(250); 
+    }
 
     if(scroller >= offSetScroll && scroller <= offSetScrollBottom) {
       $("#go_home").fadeIn(250);
+      // $("#flag").fadeOut(250);
     }
     else {
       $("#go_home").fadeOut(250);
+      // $("#flag").fadeIn(250);
     }
   });
 
