@@ -13,30 +13,30 @@
     <% end %>
 
     <div class="field">
-      <p><%= f.label :name, :class => "label_question" %></p>
+      <p><%= f.label :name, t("rsvp.form.name"), :class => "label_question" %></p>
       <%= f.text_field :name %>
     </div>
     <div class="field">
-      <p><%= f.label :email, :class => "label_question" %></p>
+      <p><%= f.label :email, t("rsvp.form.email"), :class => "label_question" %></p>
       <%= f.text_field :email, :validate => { :uniqueness => false } %>
       <p id="status-message" ></p>
     </div>
     <div class="field">
-      <p><%= f.label "Will you come to the Wedding?", :class => "label_question" %></p>
-      <%= f.radio_button :presence_wedding, true %> Yes, I've been waiting for 5 years! <br>
-      <%= f.radio_button :presence_wedding, false %> No, I waited too long. 
+      <p><%= f.label t("rsvp.form.question-wedding"), :class => "label_question" %></p>
+      <%= f.radio_button :presence_wedding, true %> <%= t("rsvp.form.answer-wedding-yes") %><br>
+      <%= f.radio_button :presence_wedding, false %> <%= t("rsvp.form.answer-wedding-no") %> 
     </div>
     <div class="field">
-      <p><%= f.label "Will you also come to the party on Saturday night?", :class => "label_question" %></p>
-      <%= f.radio_button :presence_party, true %> Yes, I AM the party.  <br>
-      <%= f.radio_button :presence_party, false %> No, I'm lame.  
+      <p><%= f.label t("rsvp.form.question-party"), :class => "label_question" %></p>
+      <%= f.radio_button :presence_party, true %> <%= t("rsvp.form.answer-party-yes") %><br>
+      <%= f.radio_button :presence_party, false %> <%= t("rsvp.form.answer-party-no") %>
     </div>
     <div class="field">
-      <p><%= f.label :quantity, "How many people will come?", :class => "label_question" %></p>
+      <p><%= f.label :quantity, t("rsvp.form.question-how-many"), :class => "label_question" %></p>
       <%= f.number_field :quantity %>
     </div>
     <div class="field">
-      <%= f.submit "Send RSVP", :disable_with => 'Saving .....' %>
+      <%= f.submit t("rsvp.form.button"), :disable_with => t("rsvp.form.button-processing") %>
     </div>
   <% end %>
 </div>
