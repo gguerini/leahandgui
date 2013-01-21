@@ -214,16 +214,12 @@ ul.photo-gallery li {
 
 ul.registry li {
    float: left;
-   padding: 10px;
-   margin: 0 30px;
+   padding: 5px;
    position: relative;
    display: inline;
    list-style-type: none;
    text-align: center;
-}
-
-ul.registry li:first-child {
-   margin-left: 200px;
+   width: 300px;
 }
 
 ul.photo-gallery li:first-child {
@@ -238,7 +234,6 @@ ul.photo-gallery p {
    width: 960px;
    height: 680px;
    margin: auto;
-   /*background: #66CCFF;*/
 }
 
 .wedding_block {
@@ -246,7 +241,6 @@ ul.photo-gallery p {
    width:360px;
    height:360px;
    float:left;
-   /*background-color:#00FF66;*/
 }
 
 .wedding_block p {

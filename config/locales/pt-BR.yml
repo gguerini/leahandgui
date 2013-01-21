@@ -11,7 +11,7 @@ pt-BR:
     photos: "Fotos"
     hotels: "Onde se hospedar?"
     what-to-do: "O que fazer?"
-    registry: "Lista de Presentes"
+    registry: "Sugestões de Presentes"
     rsvp: "Confirmação de Presença"
   about-us:
     text_html: "<p>Era uma vez uma garota que adorava viajar. Ela fez um mochilão com o seu irmão 5 anos atrás onde conheceu ele e 3 dos seus amigos em um hostel no meio de umas das cidades mais bonitas do mundo, Buenos Aires. Foi por apenas alguns poucos dias que eles ficaram juntos, mas aqueles foram importantes dias que mudaram o resto de suas vidas. Ela voltou para casa, ele voltou para casa e ele e ela se falaram por intermináveis horas em um péssimo inglês e com vários desentendimentos por causa disso. Ela decidiu mudar seus planos de ir a Roma para ir de volta a Buenos Aires. Ele decidiu pedir demissão e se mudar para Buenos Aires. Eles tinham então conversas em inglês não tão péssimo e com menos desentendimentos e se apaixonaram não só pela cidade, mas um pelo outro. Mas isso não era o bastante, porque o mundo é um lugar gigantesco com milhares de coisas a serem descobertas.</p><p>Ele e ela eventualmente se mudaram de lá para outros lugares. Milão foi por pouco tempo mas tempo suficiente para se encherem de focaccia e gelato. Então eles foram para a viagem mais marcante de suas vidas. Pelo Oriente Médio eles foram ao encontro de maravilhas do mundo e de pessoas maravilhosas. Por Turquia, Síria, Israel, Palestina, Jordânia e Egito.. até chegarem a Espanha e tornarem este país a sua nova casa. Ele e ela se apaixonaram novamente. Sevilha é a cidade que eles vão sempre amar. Sevilha roubou o coração deles.</p><p>Mas vejam só… eles retornaram ao continente onde tudo começou, e Brasil é onde eles chamariam de casa por cerca de dois anos enquanto eles viajaram por todos os cantos. Ele e ela então se mudaram para os Estados Unidos e viajaram por 20 dos mais belos estados do país. E foi em Boston, a cidade favorita dela que eles ficaram noivos em um dia ensolarado de outono. O futuro é incerto, mas agora ela e ela sempre terão um ao outro.</p>"
@@ -33,7 +33,7 @@ pt-BR:
   registry:
     description: "A sua presença é o suficiente. Mas caso deseje comprar um garfo ou uma faca, a nossa lista de presentes esta disponível nos seguintes lugares:"
     address: "Por favor, envie os presentes para (shipping address):"
-    registry-site: "Lista de Presentes na"
+    registry-site: "Sugestões de Presentes na"
     special-message-portuguese_html: "<p>Atenção:</p>Apenas a Amazon e a Crate & Barrel aceitam cartão de crédito internacional. Na Crate and Barrel existe uma opção na hora de preencher os dados de pagamento chamada 'I have an international billing address' que deve ser marcada. Em ambos os casos o processo é em inglês, porém bem simples. Caso precise de ajuda para efetuar a compra, entre em contato com o <a href='mailto:gguerini@gmail.com?subject=Ajuda - Lista de Presentes'>Guillermo</a> ou com a <a href='mailto:shirlei@guerini.net?subject=Ajuda - Lista de Presentes'>Shirlei</a>."
     go-to-amazon: "Ver lista na Amazon"
     go-to-crateandbarrel: "Ver lista na Crate & Barrel"
