@@ -17,7 +17,7 @@
         </div>
     </div>
   
-    <div id="home">
+    <div id="home" class="content_area">
     
         <div id="home_title">
             <h1>Leah<span>&</span>Gui</h1>
@@ -52,7 +52,7 @@
     <div class="spacing">
     </div>
     
-    <div id="couple">
+    <div id="couple" class="content_area">
         <a name="area_couple" id="area_couple"></a>
 
         <div class="title">
@@ -73,7 +73,7 @@
     <div class="spacing">
     </div>
     
-    <div id="wedding">
+    <div id="wedding" class="content_area">
         <a name="area_wedding" id="area_wedding"></a>
 
         <div class="title">
@@ -120,7 +120,7 @@
     <div class="spacing">
     </div>
 
-    <div id="preparty">
+    <div id="preparty" class="content_area">
         <a name="area_preparty" id="area_preparty"></a>
 
         <div class="title">
@@ -163,7 +163,7 @@
     <div class="spacing">
     </div>
 
-    <div id="photos">
+    <div id="photos" class="content_area">
         <a name="area_photos" id="area_photos"></a>
 
         <div class="title">
@@ -463,7 +463,7 @@
     <div class="spacing">
     </div>
     
-    <div id="hotels">
+    <div id="hotels" class="content_area">
         <a name="area_hotels" id="area_hotels"></a>
         
         <div class="title">
@@ -527,17 +527,15 @@
     <div class="spacing">
     </div>
     
-    <div  id="whattodo">
+    <div id="whattodo" class="content_area">
         <a name="area_whattodo" id="area_whattodo"></a>
 
         <div class="title">
             <h2><%= t("areas.what-to-do") %></h2>
         </div>
 
-        <div id="content">
-            
-            Coming soon.
-    
+        <div class="content">
+            Coming soon!!
         </div>
 
         <div class="arrow_container">
@@ -550,7 +548,7 @@
     <div class="spacing">
     </div>
 
-    <div id="registry">
+    <div id="registry" class="content_area">
         <a name="area_registry" id="area_registry"></a>
 
         <div class="title">
@@ -562,7 +560,7 @@
             <p><%= t("registry.description") %></p>
             
             <ul class="registry">
-                <li>
+                <li <%= 'style="spacing_first_item"' if portuguese? %>>
                     <a href="http://goo.gl/SydKr" target="_blank">
                         <img title="<%= t("registry.registry-site") %> Amazon" src="/assets/icons/amazon.png" />
                         <p><%= t("registry.go-to-amazon") %></p>
@@ -574,12 +572,14 @@
                         <p><%= t("registry.go-to-crateandbarrel") %></p>
                     </a>
                 </li>
+                <% if !portuguese? %>
                 <li>
                     <a href="http://goo.gl/Rjuwr" target="_blank">
                         <img title="<%= t("registry.registry-site") %> Sur La Table" border="0" src="/assets/icons/surlatable.png" />
                         <p><%= t("registry.go-to-surlatable") %></p>
                     </a>
                 </li>
+                <% end %>
             </ul>
 
             <% if portuguese? %>
@@ -606,7 +606,7 @@
     <div class="spacing">
     </div>
     
-    <div id="rsvp">
+    <div id="rsvp" class="content_area">
         <a name="area_rsvp" id="area_rsvp"></a>
         
         <div class="title">
@@ -633,6 +633,9 @@
             <a href="#area_registry" class="arrow" title="Up"><img class="" src="/assets/icons/arrow_up.png" /></a>
         </div>
        
+    </div>
+    
+    <div class="last-spacing">
     </div>
     
     <div id="footer" style="display: block">
