@@ -270,6 +270,16 @@ ul.photo-gallery p {
    /*background:#66CCFF;*/
 }
 
+#photos .foto_test { 
+  float: left;
+  margin: 5px;
+}
+
+#photos .foto_test img {
+  width: 80px;
+  height: 80px;
+}
+
 #hotels {
    width:960px;
    height:680px;
