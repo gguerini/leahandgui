@@ -24,15 +24,15 @@ en:
     rsvp_phrase: "Please don't forget to"
     rsvp_message: "RSVP"
   warm-up:
-    description: "We don't just want to see you for 6 hours! That's why you came all this way, right? So come over to our house and do what we do best, eat and drink!"
-    time: "Please come at 5:00"
-    address: "Same address of the wedding:"
+    description: "We don’t want to see you for just 6 hours! That's why you came all this way, right? So come over to our house and let’s do what we do best, eat and drink!"
+    time: "Come at 5:00"
+    address: "Same address as the wedding:"
     date: "February 23rd, 2013"
   hotels:
     other-options: "If you prefer a fancier or cheaper place take a look at:"
   registry:
     description: "We are just happy you are here. Really. But, if you wish to buy us a fork or two, we are registered at:"
-    address: "Please, send the gifts to:"
+    address: "Please, send gifts to:"
     registry-site: "Wedding Registry at"
     go-to-amazon: "Go to Amazon's website"
     go-to-crateandbarrel: "Go to Crate and Barrel's website"
@@ -43,7 +43,7 @@ en:
       name: "Name"
       email: "Email"
       question-wedding: "Will you come to the Wedding?"
-      answer-wedding-yes: "Yes, I've been waiting for 5 years!"
+      answer-wedding-yes: "Yes, I've been waiting 5 years!"
       answer-wedding-no: "No, I waited too long."
       question-party: "Will you also come to the party on Saturday night?"
       answer-party-yes: "Yes, I AM the party."
