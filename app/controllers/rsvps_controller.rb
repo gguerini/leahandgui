@@ -42,7 +42,7 @@ class RsvpsController < ApplicationController
 
     respond_to do |format|
       if @rsvp.save
-        format.html { redirect_to @rsvp, notice: 'Rsvp was successfully created.' }
+        format.html { redirect_to new_rsvp_path, notice: 'Rsvp was successfully created.' }
         format.json { render json: @rsvp, status: :created, location: @rsvp }
       else
         format.html { render action: "new" }

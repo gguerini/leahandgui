@@ -52,3 +52,24 @@ pt-BR:
       question-how-many: "Quantas pessoas virão?"
       button: "Enviar"
       button-processing: "Enviando ....."
+    messages:
+      presence_html: "Obrigado!<br>Não vemos a hora de festejar com você! :)"
+      absence_html: "Buuuuu! Tem certeza que não quer vir? Sentiremos a sua falta. :("
+      already_rsvp_html: "Você já confirmou a sua presença. Se deseja mudar a sua resposta, por favor entre em contato com o Guillermo ou com a Leah."
+  activerecord:
+    attributes:
+      rsvp:
+        quantity: "Quantidade"
+    errors:
+      models:
+        rsvp:
+          attributes:
+            email:
+              taken: "já está cadastrado. Se você deseja alterar a sua confirmação de presença entre em contato com o Guillermo ou a Leah."
+              blank: "não pode ficar em branco"
+              invalid: "não é válido"
+            name:
+              blank: "não pode ficar em branco"
+            quantity:
+              blank: "não pode ficar em branco"
+              inclusion: "tem que ser maior que 0 e menor que 10."

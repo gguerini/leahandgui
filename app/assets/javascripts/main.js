@@ -46,34 +46,38 @@ $(document).ready(function() {
     }
   });
 
-  var presence_msg = ""
-
   $('form[data-update-target]')
     .live('ajax:success', function(data, status, xhr) {
       var target = $(this).data('update-target');
-      var response = "";
 
       if (status.presence_wedding) {
-        response = "<h3>Thanks " + status.name + "!<br>We can't wait to party with you! :)</h3>";
+        $('#message_presence').toggle();
       }
       else {
-        response = "<h3>Bummer! Are you really sure you don't want to come? You will be missed. :(</h3>";
+        $('#message_absence').toggle();
       }
-      $('#' + target).html(response);
+      $('#' + target).hide();
     })
     .live('ajax:error', function(xhr, status, error) {
       var errors = $.parseJSON(status.responseText);
-      if (errors.email != undefined && errors.email == "has already been taken") {
-        var target = $(this).data('update-target');
-        var response = "<h3>You already RSVP. If you would like to update your status, please contact Leah or Guillermo.</h3>";
-        $('#' + target).html(response);
+      if (errors.email != undefined) {
+        var error_message = new String(errors.email);
+
+        // console.log(error_message.substring(0, 21));
+        // console.log(error_message.substring(0, 18));
+
+        if(error_message.substring(0, 21) == "is already registered" || error_message.substring(0, 18) == "já está cadastrado") {
+          var target = $(this).data('update-target');
+          $('#message_already_rsvp').toggle();
+          $('#' + target).hide();
+        }
       }
   });
 
-  $("input#rsvp_email").verimail({
-    denyTempEmailDomains: true,
-    messageElement: "p#status-message",
-    language: 'ptbr'
-  });
+  // $("input#rsvp_email").verimail({
+  //   denyTempEmailDomains: true,
+  //   messageElement: "p#status-message",
+  //   language: 'ptbr'
+  // });
 
 });

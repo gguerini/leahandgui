@@ -51,3 +51,14 @@ en:
       question-how-many: "How many people will come?"
       button: "Send RSVP"
       button-processing: "Saving ....."
+    messages:
+      presence_html: "Thanks!<br>We can't wait to party with you! :)"
+      absence_html: "Bummer! Are you really sure you don't want to come? You will be missed. :("
+      already_rsvp_html: "You already RSVP. If you would like to update your status, please contact Leah or Guillermo."
+  activerecord:
+    errors:
+      models:
+        rsvp:
+          attributes:
+            email:
+              taken: "is already registered. If you would like to update your status, please contact Leah or Guillermo."
