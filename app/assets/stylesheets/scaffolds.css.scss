@@ -456,3 +456,29 @@ padding: 15px 0 0 0;
     list-style: square;
   }
 }
+
+/* Sprites */
+
+.bestwestern, .courtyard, .hamptoninn{
+  background: url(image_path("hotels/sprite_hotels.png")) no-repeat;
+  margin-left: 65px;
+}
+
+.bestwestern{
+  background-position: -1px -1px ;
+  width: 170px;
+  height: 120px;
+}
+
+.courtyard{
+  background-position: -172px -1px ;
+  width: 170px;
+  height: 120px;
+}
+
+.hamptoninn{
+  background-position: -344px 0;
+  width: 170px;
+  height: 120px;
+}
+
