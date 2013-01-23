@@ -5,6 +5,9 @@ class RsvpsController < ApplicationController
   def index
     @rsvps = Rsvp.all
 
+    @total_wedding = @rsvps.map{ |i| i.quantity }.sum
+    @total_party = @rsvps.map { |i|  i.presence_wedding && i.presence_party ? i.quantity : 0 }.sum
+
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @rsvps }

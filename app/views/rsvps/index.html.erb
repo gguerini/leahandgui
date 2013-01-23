@@ -1,33 +1,45 @@
-<h1>Listing rsvps</h1>
+<h1 class="h1-small">Listing rsvps</h1>
 
 <%= link_to "Log out", signout_path, method: 'delete' %>
 
 <br>
 
-<table>
+<table cellspacing="0" cellpadding="0">
   <tr>
-    <th>Name</th>
-    <th>Email</th>
-    <th>Quantity</th>
-    <th>Presence party</th>
-    <th>Presence wedding</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th width="250">Name</th>
+    <th width="250">Email</th>
+    <th width="150">Quantity</th>
+    <th width="150">Party?</th>
+    <th width="150">Wedding?</th>
+    <th width="70"></th>
+    <th width="70"></th>
+    <th width="70"></th>
   </tr>
 
 <% @rsvps.each do |rsvp| %>
   <tr>
     <td><%= rsvp.name %></td>
     <td><%= rsvp.email %></td>
-    <td><%= rsvp.quantity %></td>
-    <td><%= rsvp.presence_party %></td>
-    <td><%= rsvp.presence_wedding %></td>
+    <td align="center"><%= rsvp.quantity %></td>
+    <td align="center"><%= rsvp.presence_party ? "Yes" : "No" %></td>
+    <td align="center"><%= rsvp.presence_wedding ? "Yes" : "No" %></td>
     <td><%= link_to 'Show', rsvp %></td>
     <td><%= link_to 'Edit', edit_rsvp_path(rsvp) %></td>
     <td><%= link_to 'Destroy', rsvp, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
+
+  <tr style="background-color: #cccccc; font-weight: bold;">
+    <td>Totals:</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td align="center"><%= @total_party %></td>
+    <td align="center"><%= @total_wedding %></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
 </table>
 
 <br>
