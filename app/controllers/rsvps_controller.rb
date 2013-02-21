@@ -1,6 +1,6 @@
 class RsvpsController < ApplicationController
 
-  before_filter :logged_in, :except => [:new, :create]
+  before_filter :logged_in, :except => [:new, :create, :live]
 
   def index
     @rsvps = Rsvp.all
@@ -76,6 +76,10 @@ class RsvpsController < ApplicationController
       format.html { redirect_to rsvps_url }
       format.json { head :no_content }
     end
+  end
+
+  def live
+    
   end
 
   private
